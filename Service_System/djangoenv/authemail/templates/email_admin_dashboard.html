@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Admin Email Dashboard</title>
+</head>
+<body>
+    <h1>Admin Email Dashboard</h1>
+    <form method="POST" action="{% url 'admin_send_email' %}">
+        {% csrf_token %}
+
+        <!-- 메시지 입력 -->
+        <label for="message">Message:</label><br>
+        <textarea name="message" rows="5" cols="50" placeholder="Enter the email content"></textarea><br><br>
+
+        <!-- 필터 선택 -->
+        <label>Filter Recipients:</label><br>
+        <input type="radio" name="filter_helmet" value="true"> Helmet: True <br>
+        <input type="radio" name="filter_helmet" value="false"> Helmet: False <br>
+        <input type="radio" name="filter_helmet" value="" checked> All Users <br><br>
+
+        <!-- 전송 버튼 -->
+        <button type="submit">Send Emails</button>
+    </form>
+</body>
+</html>

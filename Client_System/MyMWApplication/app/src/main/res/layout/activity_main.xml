@@ -1,0 +1,59 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/btn_load"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="동기화"/>
+
+    <Button
+        android:id="@+id/btn_save"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="새로운 이미지 게시"/>
+
+    <Button
+        android:id="@+id/btn_toggle_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="이미지 숨기기"/>
+
+    <Button
+        android:id="@+id/btn_delete_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="이미지 삭제" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="이미지 상태"/>
+
+    <!-- FrameLayout으로 덮개를 추가할 수 있도록 설정 -->
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <!-- 이미지 덮개 역할을 할 ImageView 추가 (처음에는 숨김) -->
+        <ImageView
+            android:id="@+id/imageOverlay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FFFFFF"
+            android:visibility="gone" />
+    </FrameLayout>
+
+</LinearLayout>

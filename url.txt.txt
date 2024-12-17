@@ -1,0 +1,5 @@
+서비스 URL :  https://mwfinal325.pythonanywhere.com/
+
+소스코드 git 주소 : https://github.com/Junghs21/Mobile-Web_final.git
+
+* 환경변수 처리된 값들이 있습니다. 해당 매칭되는 환경변수 값들은 e-campus 과제 제출설명란에 따로 적어놓겠습니다.

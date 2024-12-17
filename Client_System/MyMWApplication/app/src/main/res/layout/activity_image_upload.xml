@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- 이미지 표시 -->
+    <ImageView
+        android:id="@+id/iv_selected_image"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_marginBottom="10dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/ic_launcher_foreground"/>
+
+    <!-- 이미지 가져오기 버튼 -->
+    <Button
+        android:id="@+id/btn_select_image"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="이미지 가져오기" />
+
+    <!-- 탐지 버튼 -->
+    <Button
+        android:id="@+id/btn_detect_image"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="탐지" />
+
+    <!-- 탐지 결과 표시 -->
+    <TextView
+        android:id="@+id/tv_detection_result"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="결과가 여기에 표시됩니다."
+        android:textSize="16sp"
+        android:textColor="#000000"
+        android:gravity="center"
+        android:layout_marginTop="10dp"
+        android:padding="10dp"/>
+
+    <!-- 메인 페이지로 돌아가기 버튼 (초기에는 숨김) -->
+    <Button
+        android:id="@+id/btn_go_main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="확인 후 메인 페이지로"
+        android:visibility="gone" />
+</LinearLayout>
